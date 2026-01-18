@@ -1,0 +1,78 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.heroMid {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.heroText h1 {
+    font-size: 3rem;
+    color: #fff;
+    padding: 0.5rem 0 2rem 0;
+}
+
+.heroText p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.heroMid h1 {
+    padding-top: 4rem !important;
+}
+
+.heroText .show {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+.heroText .hide {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .heroText {
+        top: 30%;
+    }
+
+    .heroText h1 {
+        font-size: 2rem;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .NavbarItems {
+        height: 70px;
+    }
+
+    .heroText .show {
+        margin-top: 1.5rem;
+    }
+}

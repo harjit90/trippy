@@ -1,0 +1,41 @@
+.formWrapper {
+    padding: 4rem 6rem;
+    text-align: center;
+}
+.formWrapper h1 {
+    padding-bottom: 1.5rem;
+}
+.formWrapper form {
+    width: 40%;
+    margin: 0 auto;
+}
+.formWrapper input,
+.formWrapper textarea,
+.formWrapper button 
+{
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #999;
+}
+.formWrapper button {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #222;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.formWrapper button:hover {
+    background-color: #01959a;
+    transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width:600px){
+    .formWrapper {
+        padding: 2rem 4rem;
+    }
+    .formWrapper form {
+        width: 100%;
+    }
+}

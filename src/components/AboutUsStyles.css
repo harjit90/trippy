@@ -1,0 +1,15 @@
+.aboutWrapper {
+    padding: 4rem 6rem;
+}
+.aboutWrapper p {
+    padding-bottom: 1.5rem;
+}
+.aboutWrapper h2 {
+    padding-bottom: 0.5rem;
+}
+
+@media screen and (max-width:600px){
+    .aboutWrapper {
+        padding: 2rem 4rem;
+    }
+}

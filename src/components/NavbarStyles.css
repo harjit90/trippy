@@ -1,0 +1,162 @@
+.NavbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    width: 95%;
+    height: 90px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+}
+
+.NavbarLogo {
+    color: #222;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.navLinks i {
+    padding-right: 10px;
+}
+
+.navLinks:hover {
+    background-color: #01959a;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu {
+    margin-bottom: 0;
+}
+
+.navLinksMobile {
+    display: none;
+}
+
+.navBtn {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.navBtn:hover {
+    background-color: #151516;
+    color: #ffffff;
+}
+
+.menuIcons {
+    display: none;
+}
+
+/* Responsive Nav Menu CSS*/
+
+@media screen and (max-width:850px) {
+    .menuIcons {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuIcons i {
+        font-size: 1.5rem;
+        color: #222222;
+    }
+
+    .NavbarItems {
+        z-index: 99;
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #ffffff;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        right: 0;
+        margin: 0 auto;
+        opacity: 0;
+        align-items: center;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
+    }
+
+    .navMenu li {
+        width: 90%;
+        text-align: center;
+    }
+
+    .navMenu.active {
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navLinks {
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+    }
+
+    .navLinks:hover {
+        background-color: #01959a;
+        transition: none;
+    }
+
+    .navLinksMobile {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #01959a;
+        color: #ffffff;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+
+    .navBtn {
+        display: none
+    }
+
+
+}
